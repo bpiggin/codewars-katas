@@ -3,7 +3,7 @@ export function chooseBestSum(
   k: number,
   ls: number[],
 ): number | null {
-  // your code
+  return null;
 }
 
 console.log(
