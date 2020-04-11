@@ -1,4 +1,4 @@
-var recoverSecret = function(triplets) {
+var recoverSecret = function (triplets) {
   let msg = "";
   let letters = new Set([].concat(...triplets));
   while (letters.size > 0) {
@@ -42,6 +42,6 @@ triplets1 = [
   ["a", "t", "s"],
   ["h", "a", "p"],
   ["t", "i", "s"],
-  ["w", "h", "s"]
+  ["w", "h", "s"],
 ];
 console.log(recoverSecret(triplets1));

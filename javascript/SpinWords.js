@@ -1,8 +1,8 @@
-function spinWords(str){
+function spinWords(str) {
   var arr = str.split(" ");
 
-  arr = arr.map(item => reverseIfGreaterThan4(item));
-  return arr.join(' ');
+  arr = arr.map((item) => reverseIfGreaterThan4(item));
+  return arr.join(" ");
 }
 
 function reverseIfGreaterThan4(str) {

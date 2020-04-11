@@ -4,4 +4,4 @@ function solution(str) {
   return reverseArray.join("");
 }
 
-console.log(solution('world') == 'dlrow');
+console.log(solution("world") == "dlrow");

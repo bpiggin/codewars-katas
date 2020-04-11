@@ -1,8 +1,10 @@
 function findOdd(A) {
   //Sort numbers in ascending order.
-  A.sort(function(a, b){return a-b});
+  A.sort(function (a, b) {
+    return a - b;
+  });
   var count = 0;
-  for (var i=0; i<A.length; i++) {
+  for (var i = 0; i < A.length; i++) {
     //Keep track of how many of each element.
     if (A[i] == A[i + 1]) {
       count++;

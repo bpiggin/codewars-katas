@@ -10,10 +10,10 @@ function persistence(num) {
 
 function calculateProduct(num) {
   num = "" + num;
-  var digits = num.split('').map(Number);
-  return digits.reduce(function(result, currentValue) {
-    return result *= currentValue;
-  })
+  var digits = num.split("").map(Number);
+  return digits.reduce(function (result, currentValue) {
+    return (result *= currentValue);
+  });
 }
 
 console.log(persistence(39));

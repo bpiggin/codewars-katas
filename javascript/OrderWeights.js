@@ -4,10 +4,10 @@ function orderWeight(strng) {
   if (strng === "") return "";
 
   let arr = strng.split(/\s+/);
-  arr.sort(function(a, b) {
+  arr.sort(function (a, b) {
     aSum = sumDigits(a);
     bSum = sumDigits(b);
-  
+
     if (aSum < bSum) {
       return -1;
     }
@@ -22,11 +22,11 @@ function orderWeight(strng) {
     }
     return 0;
   });
-  return arr.join(' ');
+  return arr.join(" ");
 }
 
 function sumDigits(str) {
-  arr = str.split('');
+  arr = str.split("");
   arr.map(Number);
   return arr.reduce((sum, item) => +sum + +item, 0);
 }
